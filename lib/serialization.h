@@ -22,5 +22,5 @@ static void _read()
     std::cout << "read" << std::endl;
 }
 
-int P3D_API registerTypes();
+P3D_API int registerTypes();
 }  // namespace p3d
