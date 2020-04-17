@@ -6,7 +6,7 @@
 
 int main()
 {
-#define FROM_LIBRARY 0
+#define FROM_LIBRARY 1
 
 #if FROM_LIBRARY == 1
     std::cout << "registering in library" << std::endl;

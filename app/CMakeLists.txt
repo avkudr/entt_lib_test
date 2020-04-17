@@ -14,7 +14,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(p3d_app ./main.cpp)
 
-target_compile_definitions(p3d_app PRIVATE P3D_API_IMPORT P3D_API_IMPORT)
+target_compile_definitions(p3d_app PRIVATE P3D_API_IMPORT ENTT_API_IMPORT)
 target_include_directories(p3d_app SYSTEM PRIVATE ./../3rdparty/)
 
 # ----- add library
