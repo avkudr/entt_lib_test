@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "core.h"
+#include "project_settings.h"
 #include "serialization.h"
 
 int main()
@@ -24,6 +25,10 @@ int main()
 
     std::cout << bool(entt::resolve<float>().func("_read"_hs)) << std::endl;
     std::cout << bool(entt::resolve<float>().func("_write"_hs)) << std::endl;
+
+    std::cout << bool(entt::resolve<p3d::ProjectSettings>().data(
+                     P3D_ID_TYPE(p3d::p3dSetting_featuresDescType)))
+              << std::endl;
 
     return 0;
 }
